@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .container {
+        width: 80%;
+        margin: auto;
+      }
+      .card {
+        width: 200px;
+        height: 300px;
+        box-shadow: 2px 2px 5px black;
+        border-radius: 14px;
+      }
+
+      .card .top {
+        height: 200px;
+        background-color: green;
+        border-radius: 14px 14px 0px 0px;
+        position: relative;
+        z-index: 10000;
+      }
+
+      .card .bottom {
+        height: 100px;
+        background-color: red;
+        border-radius: 0px 0px 14px 14px;
+      }
+
+      .card .top .avatar {
+        position: absolute;
+        bottom: -30px;
+        left: 50%;
+        width: 70px;
+        height: 70px;
+        border-radius: 50px;
+        background-color: blue;
+        z-index: 10001;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Card Demo</h1>
+      <div class="card">
+        <div class="top">
+          <div class="avatar"></div>
+        </div>
+        <div class="bottom"></div>
+      </div>
+    </div>
+  </body>
+</html>
